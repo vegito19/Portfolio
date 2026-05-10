@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio | The Journey</title>
+    <meta name="description" content="A dynamic, story-driven portfolio showcasing the evolution of a developer's skills and projects.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="custom-cursor"></div>
+    <div id="aura-container">
+        <div id="aura-glow"></div>
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-content">
+            <div class="logo">MK.</div>
+            <ul class="nav-links">
+                <li><a href="#intro" class="nav-item active" data-target="intro">Base</a></li>
+                <li><a href="#projects" class="nav-item" data-target="projects">SSJ</a></li>
+                <li><a href="#god" class="nav-item" data-target="god">God</a></li>
+                <li><a href="#advanced" class="nav-item" data-target="advanced">Blue</a></li>
+                <li><a href="#achievements" class="nav-item" data-target="achievements">Ultra</a></li>
+            </ul>
+        </div>
+        <div class="nav-progress"></div>
+    </nav>
+
+    <main class="scroll-container">
+        <!-- BASE FORM: Intro -->
+        <section id="intro" class="section base" data-color="255, 255, 255" data-theme="base">
+            <div class="manga-grid">
+                <div class="manga-panel hero-panel glassmorphism">
+                    <div class="panel-content">
+                        <p class="overline">Chapter 1: The Beginning</p>
+                        <h1 class="title">I build digital experiences.</h1>
+                        <p class="subtitle">Every developer starts at the baseline. This is my foundation. Clean code, solid architecture, and a drive to evolve.</p>
+                        <div class="status-bars">
+                            <div class="stat"><span class="label">Power Level</span><div class="bar-bg"><div class="bar-fill" style="width: 10%;"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPER SAIYAN: Projects -->
+        <section id="projects" class="section ssj" data-color="255, 215, 0" data-theme="ssj">
+            <div class="manga-grid three-col">
+                <div class="manga-panel header-panel glassmorphism span-all">
+                    <h2 class="section-title">The Awakening</h2>
+                    <p class="section-desc">A sudden surge in capability. Building scalable applications.</p>
+                </div>
+                <div class="manga-panel project-card glassmorphism">
+                    <h3>E-Commerce Core</h3>
+                    <p>A full-stack shopping platform with real-time inventory.</p>
+                    <a href="#" class="btn">View Source</a>
+                </div>
+                <div class="manga-panel project-card glassmorphism">
+                    <h3>Task Master</h3>
+                    <p>Collaborative project management tool using WebSockets.</p>
+                    <a href="#" class="btn">View Source</a>
+                </div>
+                <div class="manga-panel project-card glassmorphism">
+                    <h3>Dev Toolkit</h3>
+                    <p>CLI utility for automating everyday developer workflows.</p>
+                    <a href="#" class="btn">View Source</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SSJ GOD: Video Editing -->
+        <section id="god" class="section god" data-color="255, 50, 100" data-theme="god">
+            <div class="manga-grid three-col">
+                <div class="manga-panel god-panel glassmorphism span-all">
+                    <div class="god-flame-container"></div>
+                    <div class="panel-content" style="position: relative; z-index: 2;">
+                        <p class="overline">Cinematic Vision</p>
+                        <h2 class="section-title">Video Editing</h2>
+                        <p class="section-desc">Transitioning from code logic to narrative rhythm. Operating with an eye for flow and emotion, crafting cinematic visual experiences with divine precision.</p>
+                    </div>
+                </div>
+                
+                <div class="manga-panel video-panel glassmorphism">
+                    <video src="BleachEdit.MP4" autoplay loop muted playsinline class="showcase-video"></video>
+                    <div class="video-caption">Bleach Edit</div>
+                </div>
+
+                <div class="manga-panel info-panel glassmorphism" style="display: flex; flex-direction: column; justify-content: center;">
+                    <h3>The Realm of Visuals</h3>
+                    <p style="margin-bottom: 20px;">Building stories that captivate effortlessly.</p>
+                    <ul class="feat-list">
+                        <li>Motion Graphics & VFX</li>
+                        <li>Color Grading</li>
+                        <li>Narrative Sequencing</li>
+                        <li>Audio Synchronization</li>
+                    </ul>
+                </div>
+
+                <div class="manga-panel video-panel glassmorphism">
+                    <video src="TojiEdit.MP4" autoplay loop muted playsinline class="showcase-video"></video>
+                    <div class="video-caption">Toji Edit</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SSJ BLUE: AI + Creativity -->
+        <section id="advanced" class="section blue" data-color="0, 255, 255" data-theme="blue">
+            <div class="manga-grid two-col asymmetric">
+                <div class="manga-panel image-placeholder glassmorphism">
+                    <div class="cyber-overlay"></div>
+                    <!-- Silhouette or abstract energy representation -->
+                    <div class="abstract-energy"></div>
+                </div>
+                <div class="manga-panel info-panel glassmorphism">
+                    <p class="overline">God Ki + Super Saiyan</p>
+                    <h2 class="section-title">AI & Creativity</h2>
+                    <p class="section-desc">Merging the analytical power of AI with boundless creative vision. Generating, fine-tuning, and directing AI-driven artistic workflows with flawless execution.</p>
+                    <ul class="feat-list">
+                        <li>Generative AI & Image Synthesis</li>
+                        <li>LLM-Assisted Storyboarding</li>
+                        <li>Creative Automation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ULTRA INSTINCT: Final Vision -->
+        <section id="achievements" class="section ui" data-color="190, 160, 255" data-theme="ui">
+            <div class="manga-grid center-focus">
+                <div class="manga-panel final-panel glassmorphism">
+                    <div class="ui-glow"></div>
+                    <p class="overline">Mastery</p>
+                    <h2 class="section-title">The Final Vision</h2>
+                    <p class="section-desc">Moving without thinking. The pinnacle of creative and technical alignment. Ready to bring the next big vision to life through code, film, and AI.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:hello@example.com" class="btn ui-btn">Initiate Contact</a>
+                        <a href="https://github.com" target="_blank" class="btn outline-btn">GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
